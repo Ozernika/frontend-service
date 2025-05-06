@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Учет времени и задач</title>
+<!--  <link rel="stylesheet" href="css/layout.css">-->
+<!--  <link rel="stylesheet" href="css/auth_style.css">-->
+<!--  <link rel="stylesheet" href="css/main_style.css">-->
+  <script src="js/logout.js"></script>
+  <script src="js/register.js"></script>
+</head>
+<body>
+<header>
+  <h1>Учет времени и задач</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Задачи</a></li>
+      <li id="loginLink"><a href="login.html">Войти</a></li>
+      <li id="logoutButton" style="display: none;">
+        <button class="logoutButton" onclick="logout()">Выйти</button>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <div class="form">
+    <h3>Регистрация</h3>
+    <input type="text" name="username" id="username" placeholder="Логин" required />
+    <input type="password" name="password" id="password" placeholder="Пароль" required />
+    <button class="button" onclick="register()">Зарегистрироваться</button>
+    <p>или <a href="login.html" class="changeLog">Войти</a></p>
+  </div>
+</main>
+<footer>
+  <p>&copy; Озерная Вероника ИКБО-30-22  @РТУ МИРЭА</p>
+</footer>
+</body>
+</html>
